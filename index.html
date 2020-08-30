@@ -14,49 +14,62 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header container">
-      <nav class="header-index navigation">
-        <a class="navigation-logo link" href="./index.html"
-          ><span class="navigation-logo-part1">Web</span>
-          <span class="navigation-logo-part2">Studio</span>
-        </a>
-        <ul class="navigation-list list">
-          <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="./index.html">Студия</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header-utils">
-        <address class="header-address">
-          <a class="header-address-mail link" href="mailto:info@devstudio.com">
-            <svg class="header-address-svg-mail" width="16" height="11">
-              <use href="./img/icons/sprite.svg#icon-mail"></use>
+    <header class="header">
+        <div class="header-container container">
+              <a class="navigation-logo link" href="./index.html"
+            ><span class="navigation-logo-part1">Web</span>
+            <span class="navigation-logo-part2">Studio</span>
+          </a>
+          <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./img/icons/sprite.svg#icon-mail"></use>
+              <use class="icon-close" href="./img/icons/sprite.svg#icon-tele"></use>
             </svg>
-            info@devstudio.com</a
-          >
+          </button>
 
-          <a class="header-address-tel link" href="tel:+380961111111">
-            <svg class="header-address-svg-tele" width="10" height="15">
-              <use href="./img/icons/sprite.svg#icon-tele"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </address>
-      </div>
+            <div class="menu-wrapper" data-menu>
+              <nav class="header-index navigation">
+                <ul class="navigation-list list">
+                  <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-utils">
+                <address class="header-address">
+                  <a class="header-address-mail link" href="mailto:info@devstudio.com">
+                    <svg class="header-address-svg-mail" width="16" height="11">
+                      <use href="./img/icons/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                  <a class="header-address-tel link" href="tel:+380961111111">
+                    <svg class="header-address-svg-tele" width="10" height="15">
+                      <use href="./img/icons/sprite.svg#icon-tele"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </address>
+              </div>
+            </div> 
+
+
+        </div>
+        
+     
     </header>
 
-    <main>
+     <main>
       <!-- Секция hero -->
-      <section class="hero">
+      <!--<section class="hero">
         <div class="hero-container">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -64,10 +77,10 @@
           </h1>
           <button data-modal-open class="hero-button">Заказать услугу</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Перечень преимуществ -->
-      <section class="section no-standart-padding">
+      <!--<section class="section no-standart-padding">
         <div class="container">
           <h2 hidden>Перечень преимуществ</h2>
           <ul class="advantages-list list">
@@ -101,10 +114,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!-- Cекция-чем мы занимаемся -->
-      <section class="section">
+      <!--<section class="section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
@@ -137,11 +150,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!-- Секция-наша команда -->
       <section class="our-team-section section">
-        <div class="container">
+        <!--<div class="container">
           <h2 class="our-team title">Наша команда</h2>
           <ul class="list">
             <li class="our-team-list">
@@ -350,11 +363,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
       <!-- Секция - постоянные клиенты-->
       <section class="section">
-        <div class="container">
+        <!--<div class="container">
           <h2 class="regular-customers title">Постоянные клиенты</h2>
           <ul class="list">
             <li class="regular-customers-list">
@@ -428,11 +441,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
 
     <footer class="footer-container">
-      <div class="container">
+      <!--<div class="container">
         <div class="footer">
           <address class="fotter-logo">
             <a class="navigation-logo link" href="./index.html"
@@ -519,13 +532,13 @@
             <div class="subscription-button"></div>
           </div>
         </div>
-      </div>
+      </div>-->
     </footer>
 
     <!-- Модальное окно-->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <!--<div class="modal">
         <b class="backdrop-title"> Оставьте свои данные, мы вам перезвоним </b>
         <form action="#">
           <label class="form-field">
@@ -584,7 +597,8 @@
           <button class="hero-button" data-modal-close>Отправить</button>
         </form>
       </div>
-    </div>
+    </div>-->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
