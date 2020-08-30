@@ -1,0 +1,150 @@
+/* нижний колонтитул */
+.footer-container {
+  background-color: #2f303a;
+}
+
+.footer {
+  display: flex;
+}
+
+.fotter-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 69px;
+  width: 200px;
+
+  .navigation-logo {
+    margin-bottom: 20px;
+  }
+}
+
+.address-logo-part2 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $title-dark-theme-color;
+}
+
+.address {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: $text-dark-theme-color;
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.footer-subscription {
+  display: block;
+  margin-top: 72px;
+
+  .form-field {
+    margin-bottom: 20px;
+    margin-top: 28px;
+  }
+}
+
+.subscription-title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-dark-theme-color;
+}
+
+.footer-address-mail,
+.footer-address-tel {
+  font-style: normal;
+  color: $text-light-theme-color;
+}
+
+.footer-address-mail {
+  margin-bottom: 9px;
+}
+
+.footer-address-tel {
+  margin-bottom: 60px;
+}
+
+.subscription {
+  margin-top: 72px;
+  margin-right: 94px;
+
+  .social-network-list-item {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-network-list-item:hover,
+  .social-network-list-item:focus {
+    background-color: $accent-color;
+  }
+
+  .footer-subscription-list:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .social-network-list-item-svg {
+    fill: #fff;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscription-form-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 20px;
+  margin-right: 12px;
+
+  &:not(:placeholder-shown) {
+    color: $title-dark-theme-color;
+  }
+}
+
+.footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $title-dark-theme-color;
+  background-color: $accent-color;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer-button-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $title-dark-theme-color;
+}
+
+.subscription-button {
+  margin-top: 24px;
+}

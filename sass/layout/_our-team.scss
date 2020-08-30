@@ -1,0 +1,76 @@
+/* наша команда*/
+
+.our-team-section {
+  background-color: #f5f4fa;
+}
+
+.name-title {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-light-theme-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.position-title {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-light-theme-color;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.our-team-list {
+  width: 270px;
+  border-radius: 4px;
+  background-color: $title-dark-theme-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.social-network-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+
+.social-network-list-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .social-network-list-item-svg,
+  &:focus .social-network-list-item-svg {
+    fill: #fff;
+  }
+}
+
+.social-network-list-item-svg {
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

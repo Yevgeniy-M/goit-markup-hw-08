@@ -1,0 +1,35 @@
+/* постоянные клиенты */
+.regular-customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+
+  &:hover .regular-customers-list-item-svg,
+  &:focus .regular-customers-list-item-svg {
+    fill: $accent-color;
+  }
+}
+
+.regular-customers-list-svg {
+  width: 44px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular-customers-list-item-svg {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,61 @@
+/* Перечень преимуществ */
+
+.advantages-container {
+  padding-top: 84px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-list-block {
+  width: 270px;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
+}
+
+.advantages-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-light-theme-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.advantages-list-item {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-light-theme-color;
+}
+
+.icon-antenna::before {
+  background-image: url(../img/icon-antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/icon-clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../img/icon-diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img//icon-astronaut.svg);
+}

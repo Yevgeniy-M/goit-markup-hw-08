@@ -1,0 +1,36 @@
+/* чем мы занимаемся*/
+
+.container .list {
+  display: flex;
+}
+
+.what-are-we-doing-title {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-dark-theme-color;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.advantages-list-block:not(:last-child),
+.what-are-we-doing-list-item:not(:last-child),
+.our-team-list:not(:last-child),
+.regular-customers-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-are-we-doing-list-item {
+  width: 370px;
+  position: relative;
+}

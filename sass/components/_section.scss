@@ -1,0 +1,9 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-standart-padding {
+  padding-top: 84px;
+  padding-bottom: 0;
+}

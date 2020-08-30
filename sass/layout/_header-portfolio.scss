@@ -1,0 +1,32 @@
+/* страничка портфолио */
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+
+  .navigation-list-item:nth-child(2)::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: flex;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+.portfolio-list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.628px;
+  letter-spacing: 0.06em;
+  color: $title-light-theme-color;
+  background-color: #f5f4fa;
+
+  &:hover,
+  &:focus {
+    color: $text-dark-theme-color;
+    background-color: $accent-color;
+  }
+}
